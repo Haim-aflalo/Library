@@ -1,3 +1,4 @@
+from book import Book
 from user import User
 
 
@@ -9,4 +10,9 @@ class Library:
         self.books = books
 
     def register_user(self,user:User):
-        pass
+        self.users[user.user_id] = user
+
+    def add_book(self,book:Book):
+        self.books[book.isbn] = book
+
+
