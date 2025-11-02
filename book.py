@@ -2,6 +2,7 @@ class Book:
     """
     Book
     """
+
     def __init__(self,title,author,isbn,is_available=True):
         self.title = title
         self.author = author
